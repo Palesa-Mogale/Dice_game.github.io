@@ -1,260 +1,54 @@
-body {
-  background-image: url("https://lawsonsyard.co.uk/cdn/shop/files/11A37458-657E-4949-9DBF-3874E35746F1_512x.jpg?v=1686552788");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #f0f0f0;
-}
-
-.score-board {
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.player {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 200px;
-}
-
-.player-name {
-  font-weight: bold;
-}
-
-.player-score {
-  font-size: 24px;
-}
-
-#roll-button {
-  width: 90px;
-  height: 45px;
-  border-radius: 5px;
-  margin-top: 180px;
-  margin-left: 599px;
-  display: block;
-}
-
-#cube .front {
-  transform: translateZ(100px);
-}
-
-#cube .back {
-  transform: rotateX(-180deg) translateZ(100px);
-}
-
-#cube .right {
-  transform: rotateY(90deg) translateZ(100px);
-}
-
-#cube .left {
-  transform: rotateY(-90deg) translateZ(100px);
-}
-
-#cube .top {
-  transform: rotateX(90deg) translateZ(100px);
-}
-
-#cube .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
-}
-
-#cube2 .front {
-  transform: translateZ(100px);
-}
-
-#cube2 .back {
-  transform: rotateX(-180deg) translateZ(100px);
-}
-
-#cube2 .right {
-  transform: rotateY(90deg) translateZ(100px);
-}
-
-#cube2 .left {
-  transform: rotateY(-90deg) translateZ(100px);
-}
-
-#cube2 .top {
-  transform: rotateX(90deg) translateZ(100px);
-}
-
-#cube2 .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
-}
-
 .container {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin: 0 auto 40px;
-
-  perspective: 1000px;
-  perspective-origin: 50% 100%;
-}
-
-#cube {
-  width: 100%;
-  height: 100%;
-  top: 100px;
-  position: absolute;
-
-  transform-style: preserve-3d;
-
-  transition: transform 6s;
-}
-
-#cube2 {
-  width: 100%;
-  height: 100%;
-  top: 100px;
-  position: absolute;
-
-  transform-style: preserve-3d;
-
-  transition: transform 6s;
-}
-
-#roll-button:hover {
-  cursor: pointer;
-  background-color: #f9f9f9;
-}
-
-#cube div {
-  background: #f0f0f0;
-  display: block;
-  position: absolute;
-  right: -210px;
-  width: 200px;
-  height: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  border-radius: 10px;
-
-  margin: 0 auto;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 500%;
+  width: 70%;
+  margin: auto;
   text-align: center;
-  padding: 50px 0;
 }
 
-#cube2 div {
-  background: #f0f0f0;
-  display: block;
-  position: absolute;
-  left: -210px;
-  width: 200px;
-  height: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  border-radius: 10px;
-
-  margin: 0 auto;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 500%;
+.dice {
   text-align: center;
-  padding: 50px 0;
+  display: inline-block;
+  margin: 10px;
 }
 
-.dot {
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: black;
-  border-radius: 15px;
+body {
+  background-color: #042f4b;
+  margin: 0;
 }
 
-.front .dot1 {
-  top: 85px;
-  left: 85px;
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4.5rem;
+  color: #4ecca3;
+  text-align: center;
 }
-.back .dot1 {
-  top: 45px;
-  left: 45px;
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
 }
-.back .dot2 {
-  top: 125px;
-  left: 125px;
+
+img {
+  width: 100%;
 }
-.right .dot1 {
-  top: 45px;
-  left: 45px;
+
+.bottom {
+  padding-top: 30px;
 }
-.right .dot2 {
-  top: 85px;
-  left: 85px;
+
+.butn {
+  background: #4ecca3;
+  font-family: "Indie Flower", cursive;
+  border-radius: 7px;
+  color: #ffff;
+  font-size: 30px;
+  padding: 16px 25px 16px 25px;
+  text-decoration: none;
 }
-.right .dot3 {
-  top: 125px;
-  left: 125px;
-}
-.left .dot1 {
-  top: 45px;
-  left: 45px;
-}
-.left .dot2 {
-  top: 45px;
-  left: 125px;
-}
-.left .dot3 {
-  top: 125px;
-  left: 45px;
-}
-.left .dot4 {
-  top: 125px;
-  left: 125px;
-}
-.top .dot1 {
-  top: 45px;
-  left: 45px;
-}
-.top .dot2 {
-  top: 45px;
-  left: 125px;
-}
-.top .dot3 {
-  top: 85px;
-  left: 85px;
-}
-.top .dot4 {
-  top: 125px;
-  left: 45px;
-}
-.top .dot5 {
-  top: 125px;
-  left: 125px;
-}
-.bottom .dot1 {
-  top: 45px;
-  left: 45px;
-}
-.bottom .dot2 {
-  top: 45px;
-  left: 85px;
-}
-.bottom .dot3 {
-  top: 45px;
-  left: 125px;
-}
-.bottom .dot4 {
-  top: 125px;
-  left: 45px;
-}
-.bottom .dot5 {
-  top: 125px;
-  left: 85px;
-}
-.bottom .dot6 {
-  top: 125px;
-  left: 125px;
+
+.butn:hover {
+  background: #232931;
+  text-decoration: none;
 }
